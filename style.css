@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.center-position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #eee;
+}
+
+.card {
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.1);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(94, 192, 120);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.person {
+  /* background-color: black; */
+  height: 100%;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pfp {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.pfp img {
+  width: 70px;
+}
+
+.id {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.job {
+  font-size: 14px;
+}
+
+.links {
+  font-weight: bold;
+  height: 100%;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.links .social {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.social a {
+  transition: 0.2s;
+}
+.social a:hover {
+  filter: invert();
+}
+
+.links img {
+  filter: invert();
+  width: 30px;
+}
+
+.body {
+  display: flex;
+  color: rgb(32, 32, 32);
+}
+
+.body .sections {
+  height: calc(100% - 100px);
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.sections ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.sections ul div {
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.sections ul div li {
+  display: inline;
+  margin-left: 5px;
+}
+
+.sections ul div:hover {
+  color: rgb(94, 192, 120);
+}
+
+.sections ul div img {
+  width: 15px;
+}
+
+.sections ul div:first-child {
+    color: rgb(94, 192, 120);
+}
+
+.body .illustration {
+  height: calc(100% - 100px);
+  width: 425px;
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+}
+
+.illustration img {
+  width: 400px;
+}
+
+.body .details {
+  height: calc(100% - 100px);
+  width: 425px;
+  position: absolute;
+  bottom: 0;
+  left: calc(150px + 425px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.body .details > div {
+  margin: -40px 0px;
+}
+
+.details .who {
+  font-size: larger;
+  font-weight: bold;
+  width: fit-content;
+  height: 30px;
+  border-bottom: 2px solid rgb(94, 192, 120);
+  position: relative;
+}
+
+.details .who::after {
+  content: "";
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+  left: 0;
+  bottom: -7px;
+  background-color: rgb(94, 192, 120);
+  position: absolute;
+}
+
+.details .brief {
+  font-size: 13px;
+  line-height: 22px;
+  width: 350px;
+}
+
+.details .contact {
+  font-size: 13px;
+  width: 350px;
+}
+.details .contact p {
+  margin: 10px 0px;
+}
+
+.details .contact p span {
+  font-weight: bolder;
+}
+
+.details .more-button a {
+  text-decoration: none;
+  display: flex;
+}
+
+.details .more-button a div {
+  background-color: rgb(94, 192, 120);
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+
+.details .more-button a div img {
+  width: 25px;
+  margin: 0px 10px;
+  filter: invert();
+}
